@@ -1,0 +1,159 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  color: #11612c;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #11612c;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(9, 85, 15);
+}
+
+nav a:hover {
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.featured-image2 {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.featured-image3 {
+  width: 75%;
+  max-height: 350px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.profile img {
+  max-width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(67, 121, 85, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #aedabc;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #165f3b;
+  text-align: center;
+  color: rgb(247, 241, 241);
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #62aa86;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: block;
+    background-color: #62aa86;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 5px 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    padding: 5px;
+  }
+}
